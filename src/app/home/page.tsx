@@ -3,7 +3,7 @@ import Image from "next/image";
 
 import React from "@/assets/React.png"
 import Tailwind from "@/assets/tailwind.png"
-import NextImage from "@/assets/Next.png"
+import NextImage from "@/assets/Next.webp"
 import JqueryImage from "@/assets/Jquery.svg"
 import { Menu } from "@/components/menu";
 
@@ -17,11 +17,10 @@ export default function Home() {
 
     const style = {
 
-        card: "flex justify-center items-center mb-10 mt-[230px]",
+        card: "flex justify-center items-center mb-10 mt-[180px] shadow-2xl",
         cardBody: "flex justify-around flex-col items-center text-center border",
         desc: "w-[280px] p-4",
         readMore: "flex justify-center items-center mt-10 w-[200px] h-[40px] bg-gradient-to-r from-pink-500 via-rose-500 to-orange-600 text-white mb-4",
-        contentInfo: "flex justify-center items-center flex-col mb-10 md:flex-row",
         titulo: "flex justify-center items-center h-[150px] w-full bg-gradient-to-r from-pink-500 via-rose-500 to-orange-600 mb-10 text-white text-2xl font-bold"
     }
 
@@ -72,7 +71,7 @@ export default function Home() {
 
             <div className="flex justify-center items-center flex-col gap-24">
 
-                <div className={style.contentInfo} id="React">
+                <div className="flex justify-center items-center flex-col md:flex-row bg-black text-white w-full h-[1000px]" id="React">
                     <Image src={React} alt="ReactCode" width={290} height={300}></Image>
                     <div>
                         <p className="p-5 text-2xl font-bold">React</p>
@@ -80,15 +79,15 @@ export default function Home() {
                     </div>
                 </div>
 
-                <div className={style.contentInfo} id="Tailwind">
+                <div className="flex justify-center items-center flex-col md:flex-row w-full h-[1000px]" id="Tailwind">
                     <Image src={Tailwind} alt="ReactCode" width={250} height={250}></Image>
-                    <div>
+                    <div className="ml-[40px]">
                         <p className="p-5 text-2xl font-bold">Tailwind</p>
                         <p className="w-[290px] md:w-[900px] mt-4 p-5">Assim como o Boostrap, Tailwind é um framework CSS que oferece a possibilidade de você criar layouts usando uma estrutura de CSS pronta. Isso permite que você otimize o tempo de criação de uma UI sem precisar fazer tudo manualmente</p>
                     </div>
                 </div>
 
-                <div className={style.contentInfo} id="NextImage">
+                <div className="flex justify-center items-center flex-col md:flex-row bg-black text-white w-full h-[1000px]" id="NextImage">
                     <Image src={NextImage} alt="ReactCode" width={250} height={250}></Image>
                     <div>
                         <p className="p-5 text-2xl font-bold">Next</p>
@@ -96,7 +95,7 @@ export default function Home() {
                     </div>
                 </div>
 
-                <div className={style.contentInfo} id="JQuery">
+                <div className="flex justify-center items-center flex-col md:flex-row w-full h-[1000px]" id="JQuery">
                     <Image src={JqueryImage} alt="ReactCode" width={250} height={250}></Image>
                     <div>
                         <p className="p-5 text-2xl font-bold">JQuery</p>

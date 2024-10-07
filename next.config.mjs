@@ -12,7 +12,14 @@ const nextConfig = {
                 source: "/",
                 destination: "/home"
             },
-            
+            {
+                source: "/Imc",
+                destination: "/imc-page"
+            },
+            {
+                source: "/Media",
+                destination: "/media-page"
+            }
         ]
     }
 };

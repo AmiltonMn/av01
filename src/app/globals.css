@@ -6,9 +6,12 @@
   --white: #fffffd;
   --black: #090909;
   --darkSand: #ccb24c;
+  --darkerSand: #968338;
   --sand: #f7d683;
   --lightSand: #fffdc0;
   --cyan: #457d97;
+  --darkCyan: #285970;
+  --lightCyan: #88ceee;
 }
 
 *{

@@ -12,9 +12,12 @@ const config: Config = {
         white: "var(--white)",
         black: "var(--black)",
         darkSand: "var(--darkSand)",
+        darkerSand: "var(--darkSand)",
         sand: "var(--sand)",
-        lightSand: "var(--lightsand)",
-        cyan: "var(--cyan)"
+        lightSand: "var(--lightSand)",
+        cyan: "var(--cyan)",
+        lightCyan: "var(--lightCyan)",
+        darkCyan: "var(--darkCyan)"
       },
     },
   },
