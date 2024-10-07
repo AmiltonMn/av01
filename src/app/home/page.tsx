@@ -1,3 +1,5 @@
+"use client"
+
 import { Metadata } from "next";
 import Image from "next/image";
 
@@ -6,12 +8,7 @@ import Tailwind from "@/assets/tailwind.png"
 import NextImage from "@/assets/Next.webp"
 import JqueryImage from "@/assets/Jquery.svg"
 import { Menu } from "@/components/menu";
-
-
-export const metadata: Metadata = {
-    title: "Av 01",
-    description: "Av PA",
-  };
+import { Tilt } from 'react-next-tilt'
 
 export default function Home() {
 
@@ -28,45 +25,53 @@ export default function Home() {
         <>
             <Menu op1="Home" op2="IMC" op3="Media"/>
             <div className="flex justify-center flex-wrap gap-24 mb-96">
-                <div className={style.card}>
-                    <div className={style.cardBody}>
-                        <div className={style.titulo}>
-                            <h1>React</h1>
+                <Tilt tiltReverse>
+                    <div className={style.card}>
+                        <div className={style.cardBody}>
+                            <div className={style.titulo}>
+                                <h1>React</h1>
+                            </div>
+                            <h2 className={style.desc}>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Natus ratione quod quasi maiores dolor veritatis repellendus autem obcaecati beatae nemo quia, architecto quam nihil non corporis adipisci, rem est nam?</h2>
+                            <a href="#React" className={style.readMore}>Read More</a>
                         </div>
-                        <h2 className={style.desc}>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Natus ratione quod quasi maiores dolor veritatis repellendus autem obcaecati beatae nemo quia, architecto quam nihil non corporis adipisci, rem est nam?</h2>
-                        <a href="#React" className={style.readMore}>Read More</a>
                     </div>
-                </div>
+                </Tilt>
 
-                <div className={style.card} >
-                    <div className={style.cardBody}>
-                        <div className={style.titulo}>
-                            <h1>Tailwind</h1>
+                <Tilt tiltReverse>
+                    <div className={style.card} >
+                        <div className={style.cardBody}>
+                            <div className={style.titulo}>
+                                <h1>Tailwind</h1>
+                            </div>
+                            <h2 className={style.desc}>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Natus ratione quod quasi maiores dolor veritatis repellendus autem obcaecati beatae nemo quia, architecto quam nihil non corporis adipisci, rem est nam?</h2>
+                            <a href="#Tailwind" className={style.readMore}>Read More</a>
                         </div>
-                        <h2 className={style.desc}>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Natus ratione quod quasi maiores dolor veritatis repellendus autem obcaecati beatae nemo quia, architecto quam nihil non corporis adipisci, rem est nam?</h2>
-                        <a href="#Tailwind" className={style.readMore}>Read More</a>
                     </div>
-                </div>
+                </Tilt>
 
-                <div className={style.card} >
-                    <div className={style.cardBody}>
-                        <div className={style.titulo}>
-                            <h1>Next</h1>
+                <Tilt tiltReverse>
+                    <div className={style.card} >
+                        <div className={style.cardBody}>
+                            <div className={style.titulo}>
+                                <h1>Next</h1>
+                            </div>
+                            <h2 className={style.desc}>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Natus ratione quod quasi maiores dolor veritatis repellendus autem obcaecati beatae nemo quia, architecto quam nihil non corporis adipisci, rem est nam?</h2>
+                            <a href="#NextImage" className={style.readMore}>Read More</a>
                         </div>
-                        <h2 className={style.desc}>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Natus ratione quod quasi maiores dolor veritatis repellendus autem obcaecati beatae nemo quia, architecto quam nihil non corporis adipisci, rem est nam?</h2>
-                        <a href="#NextImage" className={style.readMore}>Read More</a>
                     </div>
-                </div>
+                </Tilt>
 
-                <div className={style.card} >
-                    <div className={style.cardBody}>
-                        <div className={style.titulo}>
-                            <h1>JQuery</h1>
+                <Tilt tiltReverse>
+                    <div className={style.card} >
+                        <div className={style.cardBody}>
+                            <div className={style.titulo}>
+                                <h1>JQuery</h1>
+                            </div>
+                            <h2 className={style.desc}>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Natus ratione quod quasi maiores dolor veritatis repellendus autem obcaecati beatae nemo quia, architecto quam nihil non corporis adipisci, rem est nam?</h2>
+                            <a href="#JQuery" className={style.readMore}>Read More</a>
                         </div>
-                        <h2 className={style.desc}>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Natus ratione quod quasi maiores dolor veritatis repellendus autem obcaecati beatae nemo quia, architecto quam nihil non corporis adipisci, rem est nam?</h2>
-                        <a href="#JQuery" className={style.readMore}>Read More</a>
                     </div>
-                </div>
+                </Tilt>
             </div>
 
             <div className="flex justify-center items-center flex-col gap-24">
